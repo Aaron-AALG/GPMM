@@ -1,16 +1,16 @@
 Generalized p-Mean Models
 ================================
 
-Collection of Generalized *p*-Mean Models (GPMM) with classic, fuzzy and un-weighted approach. This set of outranking methods are based on the concept of `weighted generalized p-mean <https://en.wikipedia.org/wiki/Generalized_mean>` of a sequence:
+Collection of Generalized *p*-Mean Models (GPMM) with classic, fuzzy and un-weighted approach. This set of outranking methods are based on the concept of `weighted generalized p-mean <https://en.wikipedia.org/wiki/Generalized_mean>`_ of a sequence:
 
 .. image:: images/M_score.png
 
 In this project, we have included four different approaches:
 
-1. **Classic (GPMM)**: The *M* score is computed per each alternative to generate a cardinal ranking.
-2. **Fuzzy (FGPMM)**: The decision matrix is trapezoidal fuzzy shaped as *(x_L, x_1, x_2, x_R)* with LR-representation. Then, it is satisfied that *x_L <= x_1 <= x_2 <= x_R* per each component of the matrix.
-3. **Un-Weighted (UWGPMM)**: The weighting scheme is variable and it has attached a lower and upper bound per each component. As a result, it returns an interval *[M_L, M_U]*.
-4. **Fuzzy Un-Weighted (FUWGPMM)**: It combines both approaches in the decision matrix and the weighting scheme.
+1. **Classic (WMM)**: The *M* score is computed per each alternative to generate a cardinal ranking.
+2. **Fuzzy (FWMM)**: The decision matrix is trapezoidal fuzzy shaped as *(x_L, x_1, x_2, x_R)* with LR-representation. Then, it is satisfied that *x_L <= x_1 <= x_2 <= x_R* per each component of the matrix.
+3. **Un-Weighted (UWMM)**: The weighting scheme is variable and it has attached a lower and upper bound per each component. As a result, it returns an interval *[M_L, M_U]*.
+4. **Fuzzy Un-Weighted (FUWMM)**: It combines both approaches in the decision matrix and the weighting scheme.
 
 The mathematical fuzzy LR-representation of a trapezoid *(x_L, x_1, x_2, x_R)* is depicted as follows:
 
@@ -19,7 +19,7 @@ The mathematical fuzzy LR-representation of a trapezoid *(x_L, x_1, x_2, x_R)* i
 Installation
 ======================
 
-You can install the uwVIKOR library from GitHub::
+You can install the uwVIKOR library from GitHub:
 
 .. code:: sh
 
@@ -27,7 +27,7 @@ You can install the uwVIKOR library from GitHub::
     python3 -m pip install -e GPMM
 
 
-You can also install it directly from PyPI::
+You can also install it directly from PyPI:
 
 .. code:: sh
 
@@ -37,7 +37,7 @@ You can also install it directly from PyPI::
 Example
 ======================
 
-GPMM is implemented in order to manage **Pandas** DataFrames as input data which will be converted to **NumPy** arrays. Here is an example in which we only use three alternatives and four criteria::
+GPMM is implemented in order to manage **Pandas** DataFrames as input data which will be converted to **NumPy** arrays. Here is an example in which we only use three alternatives and four criteria:
 
 .. code:: python
 
@@ -54,7 +54,7 @@ GPMM is implemented in order to manage **Pandas** DataFrames as input data which
     U = np.repeat(0.4, data.shape[1])
     p = 2
 
-    x = GPMM(data, directions, L, U, v)
+    x = GPMM(data, directions, L, U, p)
 
 
 Optimization in Python
