@@ -1,6 +1,11 @@
 Generalized p-Mean Models
 ================================
 
+|Slides|
+.. |Slides| image:: https://github.com/Aaron-AALG/GPMM/tree/main/images/x_fuzzy.png
+   :target: https://github.com/Aaron-AALG/GPMM/tree/main/images/x_fuzzy.png
+
+
 Collection of Generalized *p*-Mean Models (GPMM) with classic, fuzzy and un-weighted approach. This set of outranking methods are based on the concept of `weighted generalized p-mean <https://en.wikipedia.org/wiki/Generalized_mean>`_ of a sequence:
 
 .. image:: images/M_score.png
