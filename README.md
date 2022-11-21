@@ -47,7 +47,7 @@ GPMM is implemented in order to manage **NumPy** arrays. Here is an example in w
 ```python
     import pandas as pd
     import numpy as np
-    from GPMM.methods import *
+    from GPMM.UWMM import UWMM
 
     data = pd.DataFrame({"c1":[173, 176, 142],
                         "c2":[10, 11, 5],
@@ -58,7 +58,7 @@ GPMM is implemented in order to manage **NumPy** arrays. Here is an example in w
     U = np.repeat(0.4, data.shape[1])
     p = 2
 
-    x = GPMM(data, directions, L, U, v)
+    x = UWMM(data, directions, L, U, v)
 ```
 
 Optimization in Python
