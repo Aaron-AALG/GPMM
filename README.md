@@ -1,7 +1,7 @@
 Generalized *p*-Mean Models
 ================================
 
-![python-version](https://img.shields.io/badge/python->=3.8-green.svg)
+![python-version](https://img.shields.io/badge/python->=3.8-orange.svg)
 [![pypi-version](https://img.shields.io/pypi/v/gpmm.svg)](https://pypi.python.org/pypi/gpmm/)
 ![license](https://img.shields.io/pypi/l/gpmm.svg)
 [![Downloads](https://static.pepy.tech/personalized-badge/gpmm?period=total&units=none&left_color=grey&right_color=orange&left_text=Downloads)](https://pepy.tech/project/gpmm)
