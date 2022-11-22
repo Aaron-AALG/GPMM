@@ -29,14 +29,14 @@ Installation
 You can install the GPMM library from GitHub:
 
 ```terminal
-    git clone https://github.com/Aaron-AALG/GPMM.git
-    python3 -m pip install -e GPMM
+git clone https://github.com/Aaron-AALG/GPMM.git
+python3 -m pip install -e GPMM
 ```
 
 You can also install it directly from PyPI:
 
 ```terminal
-    pip install GPMM
+pip install GPMM
 ```
 
 Example
@@ -45,20 +45,20 @@ Example
 GPMM is implemented in order to manage **NumPy** arrays. Here is an example in which we only use three alternatives and four criteria.
 
 ```python
-    import pandas as pd
-    import numpy as np
-    from GPMM.UWMM import UWMM
+import pandas as pd
+import numpy as np
+from GPMM.UWMM import UWMM
 
-    data = pd.DataFrame({"c1":[173, 176, 142],
-                        "c2":[10, 11, 5],
-                        "c3":[11.4, 12.3, 8.2],
-                        "c4":[10.01, 10.48, 7.3]})
-    directions = ["max", "max", "min", "min"]
-    L = np.repeat(0.1, data.shape[1])
-    U = np.repeat(0.4, data.shape[1])
-    p = 2
+data = pd.DataFrame({"c1":[173, 176, 142],
+                    "c2":[10, 11, 5],
+                    "c3":[11.4, 12.3, 8.2],
+                    "c4":[10.01, 10.48, 7.3]})
+directions = ["max", "max", "min", "min"]
+L = np.repeat(0.1, data.shape[1])
+U = np.repeat(0.4, data.shape[1])
+p = 2
 
-    x = UWMM(data, directions, L, U, p=p)
+x = UWMM(data, directions, L, U, p=p)
 ```
 
 Optimization in Python
