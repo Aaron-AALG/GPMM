@@ -9,14 +9,14 @@ Generalized *p*-Mean Models
 
 Collection of Generalized *p*-Mean Models (GPMM) with classic, fuzzy and un-weighted approach. This set of outranking methods are based on the concept of [weighted generalized p-mean](https://en.wikipedia.org/wiki/Generalized_mean) of a sequence:
 
-$$ M_i^p(X,w) = \left[\sum_{j=1}^M w_jx_{ij}^p\right]^\frac{1}{p} $$
+$$ \mathcal{M}_i^p(X,w) = \left[\sum_{j=1}^M w_jx_{ij}^p\right]^\frac{1}{p} $$
 
 In this project, we have included four different approaches:
 
-1. **Classic (WMM)**: The *M* score is computed per each alternative to generate a cardinal ranking.
-2. **Fuzzy (FWMM)**: The decision matrix is trapezoidal fuzzy shaped as $(x_L, x_1, x_2, x_R)$ with LR-representation. Then, it is satisfied that $x_L \le x_1 \le x_2 \le x_R$ per each component of the matrix.
-3. **Unweighted (UWMM)**: The weighting scheme is variable and it has attached a lower and upper bound per each component. As a result, it returns an interval $[M_L, M_U]$.
-4. **Fuzzy Un-Weighted (FUWMM)**: It combines both approaches in the decision matrix and the weighting scheme.
+1. **Classic (WMM)**: The $\mathcal{M}$ score is computed per each alternative to generate a cardinal ranking.
+2. **Fuzzy (FWMM)**: The decision matrix is trapezoidal fuzzy shaped as $(x_L, x_1, x_2, x_R)$ with LR-representation. Then, it is satisfied that $x_L \le x_1 \le x_2 \le x_R$ per each component of the matrix. The output is a fuzzy score vector $\tilde{\mathcal{M}}$.
+3. **Unweighted (UWMM)**: The weighting scheme is variable and it has attached a lower and upper bound per each component. As a result, it returns an interval $[\mathcal{M}_L, \mathcal{M}_U]$.
+4. **Fuzzy Un-Weighted (FUWMM)**: It combines both approaches in the decision matrix and the weighting scheme, thus giving an output of $[\tilde{\mathcal{M}}_L, \tilde{\mathcal{M}}_U]$.
 
 The mathematical fuzzy LR-representation of a trapezoid $(x_L, x_1, x_2, x_R)$ is depicted as follows:
 
