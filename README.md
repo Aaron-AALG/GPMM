@@ -7,9 +7,9 @@ Generalized *p*-Mean Models
 [![Downloads](https://static.pepy.tech/personalized-badge/gpmm?period=total&units=none&left_color=grey&right_color=orange&left_text=Downloads)](https://pepy.tech/project/gpmm)
 
 
-Collection of Generalized *p*-Mean Models (GPMM) with classic, fuzzy and un-weighted approach. This set of outranking methods are based on the concept of [weighted generalized p-mean](https://en.wikipedia.org/wiki/Generalized_mean) of a sequence:
+Collection of Generalized *p*-Mean Models (GPMM) with classic, fuzzy and un-weighted approach. This set of outranking methods are based on the concept of [weighted generalized p-mean](https://en.wikipedia.org/wiki/Generalized_mean) of a sequence $X$ as:
 
-$$ \mathcal{M}_i^p(X,w) = \left[\sum_{j=1}^M w_jx_{ij}^p\right]^\frac{1}{p} $$
+$$ \mathcal{M}_i^p(X,w) : [0,1]^M \to \mathbb{R} $$
 
 In this project, we have included four different approaches:
 
